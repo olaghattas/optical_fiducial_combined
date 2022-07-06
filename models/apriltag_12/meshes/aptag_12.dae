@@ -78,14 +78,14 @@
   <library_effects>
     <effect id="Material-effect">
       <profile_COMMON>
-        <newparam sid="aptag_1_png-surface">
+        <newparam sid="aptag_12_png-surface">
           <surface type="2D">
-            <init_from>aptag_1_png</init_from>
+            <init_from>aptag_12_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="aptag_1_png-sampler">
+        <newparam sid="aptag_12_png-sampler">
           <sampler2D>
-            <source>aptag_1_png-surface</source>
+            <source>aptag_12_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -94,7 +94,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="aptag_1_png-sampler" texcoord="UVMap"/>
+              <texture texture="aptag_12_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -105,8 +105,8 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="aptag_1_png" name="aptag_1_png">
-      <init_from>aptag_1.png</init_from>
+    <image id="aptag_12_png" name="aptag_12_png">
+      <init_from>aptag_12.png</init_from>
     </image>
   </library_images>
   <library_materials>

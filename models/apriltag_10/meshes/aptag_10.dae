@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 3.2.0 commit date:2022-06-08, commit time:10:22, hash:e05e1e369187</authoring_tool>
     </contributor>
-    <created>2022-06-24T13:38:43</created>
-    <modified>2022-06-24T13:38:43</modified>
+    <created>2022-06-20T09:03:00</created>
+    <modified>2022-06-20T09:03:00</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -78,14 +78,14 @@
   <library_effects>
     <effect id="Material-effect">
       <profile_COMMON>
-        <newparam sid="red_circle_with_border_png-surface">
+        <newparam sid="aptag_10_png-surface">
           <surface type="2D">
-            <init_from>red_circle_with_border_png</init_from>
+            <init_from>aptag10_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="red_circle_with_border_png-sampler">
+        <newparam sid="aptag_10_png-sampler">
           <sampler2D>
-            <source>red_circle_with_border_png-surface</source>
+            <source>aptag_10_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -94,7 +94,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="red_circle_with_border_png-sampler" texcoord="UVMap"/>
+              <texture texture="aptag_10_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -105,8 +105,8 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="red_circle_with_border_png" name="red_circle_with_border_png">
-      <init_from>red_circle_with_border.png</init_from>
+    <image id="aptag_10_png" name="aptag_10_png">
+      <init_from>aptag_10.png</init_from>
     </image>
   </library_images>
   <library_materials>
@@ -118,7 +118,7 @@
     <geometry id="Cube-mesh" name="Cube">
       <mesh>
         <source id="Cube-mesh-positions">
-          <float_array id="Cube-mesh-positions-array" count="24">0.375 0.07499998 0.25 0.375 0.07499998 -0.25 0.375 -0.07499998 0.25 0.375 -0.07499998 -0.25 -0.375 0.07499998 0.25 -0.375 0.07499998 -0.25 -0.375 -0.07499998 0.25 -0.375 -0.07499998 -0.25</float_array>
+          <float_array id="Cube-mesh-positions-array" count="24">0.5 0.5 -0.5 0.5 -0.5 -0.5 0.5 0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 -0.5 -0.5 -0.5 -0.5 -0.5 0.5 0.5 -0.5 -0.5 0.5</float_array>
           <technique_common>
             <accessor source="#Cube-mesh-positions-array" count="8" stride="3">
               <param name="X" type="float"/>
@@ -128,9 +128,9 @@
           </technique_common>
         </source>
         <source id="Cube-mesh-normals">
-          <float_array id="Cube-mesh-normals-array" count="18">0 0 1 0 -1 0 -1 0 0 0 0 -1 1 0 0 0 1 0</float_array>
+          <float_array id="Cube-mesh-normals-array" count="30">0 1 0 0 0 1 -1 0 0 0 -1 0 1 0 0 0 0 -1 0 1 0 -1 0 0 0 -1 0 1 0 0</float_array>
           <technique_common>
-            <accessor source="#Cube-mesh-normals-array" count="6" stride="3">
+            <accessor source="#Cube-mesh-normals-array" count="10" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
@@ -138,7 +138,7 @@
           </technique_common>
         </source>
         <source id="Cube-mesh-map-0">
-          <float_array id="Cube-mesh-map-0-array" count="72">0.1559342 0.764151 0.1339854 0.7860998 0.1339854 0.764151 0.008280634 0.9975377 0.9903013 0.0155152 0.9903013 0.9975377 0.1339854 0.7202534 0.1120366 0.7422022 0.1120366 0.7202534 0.1120366 0.764151 0.09008777 0.7860998 0.09008777 0.764151 0.1339854 0.764151 0.1120366 0.7860998 0.1120366 0.764151 0.1339854 0.7422022 0.1120366 0.764151 0.1120366 0.7422022 0.1559342 0.764151 0.1559342 0.7860998 0.1339854 0.7860998 0.008280634 0.9975377 0.008280634 0.0155152 0.9903013 0.0155152 0.1339854 0.7202534 0.1339854 0.7422022 0.1120366 0.7422022 0.1120366 0.764151 0.1120366 0.7860998 0.09008777 0.7860998 0.1339854 0.764151 0.1339854 0.7860998 0.1120366 0.7860998 0.1339854 0.7422022 0.1339854 0.764151 0.1120366 0.764151</float_array>
+          <float_array id="Cube-mesh-map-0-array" count="72">0.475066 0.5 0.4502915 0.5247746 0.4502915 0.5 0.05701851 0.9037759 0.03224408 0.9285502 0.03224408 0.9037759 0.06736779 0.778236 0.04259335 0.8030105 0.04259335 0.778236 0.04259335 0.8277849 0.01781886 0.8525595 0.01781886 0.8277849 0.9991486 0.001822054 8.51393e-4 0.9999052 8.51393e-4 0.001821994 0.06736779 0.8030105 0.04259335 0.8277849 0.04259335 0.8030105 0.475066 0.5 0.475066 0.5247746 0.4502915 0.5247746 0.05701851 0.9037759 0.05701851 0.9285502 0.03224408 0.9285502 0.06736779 0.778236 0.06736779 0.8030105 0.04259335 0.8030105 0.04259335 0.8277849 0.04259335 0.8525595 0.01781886 0.8525595 0.9991486 0.001822054 1.001736 0.9999052 8.51393e-4 0.9999052 0.06736779 0.8030105 0.06736779 0.8277849 0.04259335 0.8277849</float_array>
           <technique_common>
             <accessor source="#Cube-mesh-map-0-array" count="36" stride="2">
               <param name="S" type="float"/>
@@ -153,7 +153,7 @@
           <input semantic="VERTEX" source="#Cube-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#Cube-mesh-map-0" offset="2" set="0"/>
-          <p>4 0 0 2 0 1 0 0 2 2 1 3 7 1 4 3 1 5 6 2 6 5 2 7 7 2 8 1 3 9 7 3 10 5 3 11 0 4 12 3 4 13 1 4 14 4 5 15 1 5 16 5 5 17 4 0 18 6 0 19 2 0 20 2 1 21 6 1 22 7 1 23 6 2 24 4 2 25 5 2 26 1 3 27 3 3 28 7 3 29 0 4 30 2 4 31 3 4 32 4 5 33 0 5 34 1 5 35</p>
+          <p>4 0 0 2 0 1 0 0 2 2 1 3 7 1 4 3 1 5 6 2 6 5 2 7 7 2 8 1 3 9 7 3 10 5 3 11 0 4 12 3 4 13 1 4 14 4 5 15 1 5 16 5 5 17 4 6 18 6 6 19 2 6 20 2 1 21 6 1 22 7 1 23 6 7 24 4 7 25 5 7 26 1 8 27 3 8 28 7 8 29 0 9 30 2 9 31 3 9 32 4 5 33 0 5 34 1 5 35</p>
         </triangles>
       </mesh>
     </geometry>

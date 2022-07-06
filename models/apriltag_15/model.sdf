@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version="1.5">
-  <model name="apriltag1">
+  <model name="apriltag15">
     <pose> 0 0 0.5 0 0 0</pose> <!-- 5 0 0.5 0 0 0-->
     <static>true</static>
     <link name="link">
@@ -15,7 +15,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
             <mesh>
-              <uri>model://apriltag_1/meshes/aptag_1.dae</uri>
+              <uri>model://apriltag_15/meshes/aptag_15.dae</uri>
             </mesh>
         </geometry>
       </visual>

@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version="1.5">
   <model name="apriltag2">
-    <pose> 0 5 0.5 0 0 -1.5708</pose> <!-- 5 0 0.5 0 0 0-->
+    <pose> 0 0 0.5 0 0 0</pose> <!-- 5 0 0.5 0 0 0-->
     <static>true</static>
     <link name="link">
       <collision name="collision">

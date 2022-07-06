@@ -5,7 +5,7 @@
         <arg name="debug" default="false" />
         <arg name="gui" default="true" />
         <arg name="pause" default="false" />
-        <arg name="world" default="$(find optical_fiducial_combined)/worlds/fiducial_boxes.world" />
+        <arg name="world" default="$(find optical_fiducial_combined)/worlds/fidu_1.world" />
         <arg name="extra_gazebo_args" default="--verbose"/>
 
         <!-- include gazebo_ros launcher -->
@@ -36,12 +36,12 @@
                         
         
 
-        <!--<node name="ap_tag" pkg="optical_fiducial_combined" type="detec.py" output="screen"/> -->
+        <!--<node name="ap_tag" pkg="optical_fiducial_combined" type="detec.py" output="screen"/> 
         <node name="image_proc" pkg="image_proc" type="image_proc" ns="realsense/color"/>
         
         <include file="$(find apriltag_ros)/launch/continuous_detection.launch">
                 <arg name="camera_frame" value="front_realsense_gazebo"/>   
-        </include>
+        </include>-->
         
 </launch>       
 
